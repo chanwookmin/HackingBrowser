@@ -6,7 +6,9 @@ var output = document.querySelector('.output');
 var maxX = garden.clientWidth  - ball.clientWidth;
 var maxY = garden.clientHeight - ball.clientHeight;
 
-var aud = document.getElementById("jokerAudio");
+//var aud = document.getElementById("jokerAudio");
+
+var aud=new Audio("data/joker_sound.mp3");
 
 function handleOrientation(event) {
   var x = event.beta;  // In degree in the range [-180,180]
