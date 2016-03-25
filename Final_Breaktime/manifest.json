@@ -1,0 +1,38 @@
+{
+  "name": "Breaktime",
+  "manifest_version": 2,
+  "version": "0.1",
+  "description": "Take a break",
+
+  "permissions": [
+    "tts",
+    "tabs",
+    "background",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icons/lock_icon_5.png",
+    "default_title": "Browser Action Hello World"
+    //"default_popup": "popup.html",
+    //"js": ["jquery.js", "browser_action.js", "background.js"]
+  },
+  "commands": {
+    "_execute_browser_action": {
+        "suggested_key": {
+            "default": "Alt+Shift+R"
+        },
+        "description": "Reload all tabs"
+    }
+  },
+  "icons": {
+    "128": "icons/lock_icon_128.png"
+  }
+  // "web_accessible_resources": [
+  //   "cat.jpg"
+  // ]
+}
